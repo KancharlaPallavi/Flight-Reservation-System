@@ -38,6 +38,14 @@ public class Main {
         System.out.println("Flight Number: " + flight.getFlightNumber());
         System.out.println("No of passengers: " + passenger.getPassengerDetails());
         System.out.println("Price: "+touristTicket.getPrice());
-    }
 
+        //calling printTicketDetails() method to print regular ticket pnr
+        printTicketDetails(regularTicket);
+
+        //calling printTicketDetails() method to print tourist ticket pnr
+        printTicketDetails(touristTicket);
+    }
+    public static void printTicketDetails(Ticket ticket){
+        System.out.println(ticket.getPnr());
+    }
 }
