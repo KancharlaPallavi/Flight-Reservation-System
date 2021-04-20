@@ -24,7 +24,7 @@ public class Main {
         //Object for touristTicket
         TouristTicket touristTicket = new TouristTicket("1A", "sdr432", "hyderabad",
                 "Trivandrum", "2021-04-19T15:14",
-                "2021-04-19T17:04", 4000.0f, flight, passenger, false,
+                "2021-04-19T17:04",  flight, passenger, 5000.0f,false,
                 "Menamkulam", touristPlaces);
 
         //Object for RegularTicket
@@ -37,7 +37,7 @@ public class Main {
         System.out.println("Duration in minutes: " + touristTicket.getFlightDuration());
         System.out.println("Flight Number: " + flight.getFlightNumber());
         System.out.println("No of passengers: " + passenger.getPassengerDetails());
-
+        System.out.println("Price: "+touristTicket.getPrice());
     }
 
 }
